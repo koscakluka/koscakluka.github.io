@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[678],{6558:function(e,t,a){a.r(t);var l=a(7294),n=a(6848),r=a(7022);t.default=function(){return l.createElement(n.Z,null,l.createElement(r.Z,{title:"Home"}),"Welcome to this blank page. Let's start coding!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-bd1fbbc89f88fd55446b.js.map
