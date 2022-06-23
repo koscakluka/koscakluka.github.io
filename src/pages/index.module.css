@@ -1,0 +1,76 @@
+.page-block-landing {
+    align-items: center;
+}
+
+.block {
+    flex: 0 1 500px;
+    width: 500px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.text-block {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: var(--line-height-normal);
+    margin-bottom: 2rem;
+}
+
+.profile-front {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    margin: 0 auto;
+}
+
+.profile-front-img {
+    padding: 10px !important;
+    background-color: #b9b9b9 !important;
+
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 50%;
+}
+
+/* Hack for landscape mode */
+/* @media screen and (max-width: 700px) and (max-height: 550px) {
+    .profile-front {
+        width: 150px;
+    }
+} */
+
+/* @media screen and ((orientation: portrait) and (max-width: 1500px)) {
+    .block {
+        flex: 0 1 750px;
+    }
+} */
+
+@media screen and (max-height: 1000px) {
+    .profile-front {
+        max-width: 50vh;
+    }
+}
+
+/* @media screen and (min-width: 700px) {
+     .text-block {
+        text-align: justify;
+    }
+
+    .headingRight {
+        text-align: right;
+    }
+
+    .headingleft {
+        text-align: left;
+    }
+
+    .page-block-landing {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    } 
+} */

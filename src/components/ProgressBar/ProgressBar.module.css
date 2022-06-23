@@ -1,0 +1,34 @@
+.progress-bar-wrapper {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-bar-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+}
+
+.progress-bar-scale-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    overflow: auto;
+}
+
+.progress-bar-tick {
+    width: 5%;
+    height: 100%;
+    border-right: 1px solid;
+}
