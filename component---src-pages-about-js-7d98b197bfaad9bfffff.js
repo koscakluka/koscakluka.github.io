@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkoscakluka_github_io=self.webpackChunkkoscakluka_github_io||[]).push([[682],{5465:function(e,t,u){u.r(t);var l=u(7294),n=u(9963),a=u(7022);t.default=function(){return l.createElement(n.Z,null,l.createElement(a.Z,{title:"Home"}),l.createElement("p",null,"This is where I would put about info..."),l.createElement("p",null,"...IF I HAD ANY!"))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-7d98b197bfaad9bfffff.js.map
