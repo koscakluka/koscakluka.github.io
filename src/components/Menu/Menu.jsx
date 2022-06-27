@@ -1,28 +1,25 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
+import * as classes from './Menu.module.css';
 
 const Menu = () => (
-  <div
-    style={{
-      background: '#f4f4f4',
-      paddingTop: '10px',
-    }}
-  >
-    <ul
-      style={{
-        listStyle: 'none',
-        display: 'flex',
-        justifyContent: 'space-evenly',
-      }}
-    >
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-    </ul>
-  </div>
-)
+    <nav className={classes.navigation}>
+        <ul className={classes.headerLinks}>
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/about">About</Link>
+            </li>
+            <li>
+                <Link to="/portfolio">Portfolio</Link>
+            </li>
+            <li>
+                <Link to="/contact">Contact</Link>
+            </li>
+        </ul>
+    </nav>
+);
 
 export default Menu;

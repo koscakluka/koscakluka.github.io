@@ -2,6 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 
 import * as classes from './index.module.css';
@@ -21,29 +22,9 @@ const Layout = ({ children }) => {
 
     return (
         <div className={classes.container}>
-            {/*<Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-             <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      > */}
+            <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
             <main>{children}</main>
             <Footer />
-            {/* <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-            display: `flex`,
-            justifyContent: `center`
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-        </div>*/}
         </div>
     );
 };

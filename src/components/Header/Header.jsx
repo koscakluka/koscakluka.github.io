@@ -1,44 +1,13 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import Menu from "../Menu/Menu"
+import * as React from 'react';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: '#34F',
-      marginBottom: '0',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-    <Menu />
-  </header>
-)
+import Menu from '../Menu/Menu';
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+import * as classes from './Header.module.css';
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const Header = () => (
+    <header className={classes.header}>
+        <Menu />
+    </header>
+);
 
-export default Header
+export default Header;

@@ -49,7 +49,7 @@ module.exports = {
             options: {
                 async: true,
                 defer: true,
-                args: `?render=explicit`,
+                args: ``,
             },
         },
     ],
