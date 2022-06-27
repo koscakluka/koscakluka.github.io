@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.footer-block {
+    padding-bottom: 4rem;
+    position: relative;
+}
+
 .text-block {
     width: 500px;
     display: flex;

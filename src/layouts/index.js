@@ -1,9 +1,12 @@
-import * as React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from '../components/Header/Header'
-import './index.css'
+import Footer from '../components/Footer/Footer';
+
+import * as classes from './index.module.css';
+
+import './index.css';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -14,10 +17,10 @@ const Layout = ({ children }) => {
                 }
             }
         }
-    `)
+    `);
 
     return (
-        <>
+        <div className={classes.container}>
             {/*<Header siteTitle={data.site.siteMetadata?.title || `Title`} />
              <div
         style={{
@@ -27,6 +30,7 @@ const Layout = ({ children }) => {
         }}
       > */}
             <main>{children}</main>
+            <Footer />
             {/* <footer
           style={{
             marginTop: `var(--space-5)`,
@@ -40,12 +44,12 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
         </div>*/}
-        </>
-    )
-}
+        </div>
+    );
+};
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;
