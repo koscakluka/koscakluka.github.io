@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 import * as classes from './PageBlock.module.css';
 
-const PageBlock = ({ children, className, style, order, minFullHeight }) => {
+const PageBlock = ({
+    id,
+    children,
+    className,
+    style,
+    order,
+    minFullHeight,
+}) => {
     const wrapperClass = [
         (order + 1) % 2 ? classes.pageBlockOdd : classes.pageBlockEven,
         classes.pageBlockWrapper,
@@ -16,7 +23,7 @@ const PageBlock = ({ children, className, style, order, minFullHeight }) => {
     ].join(' ');
 
     return (
-        <div className={wrapperClass}>
+        <div id={id} className={wrapperClass}>
             <div className={blockClass} style={{ ...style }}>
                 {children}
             </div>
@@ -25,6 +32,7 @@ const PageBlock = ({ children, className, style, order, minFullHeight }) => {
 };
 
 PageBlock.propTypes = {
+    id: PropTypes.string,
     children: PropTypes.node,
     className: PropTypes.string,
     style: PropTypes.object,
