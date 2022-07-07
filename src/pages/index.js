@@ -11,10 +11,21 @@ import ProgressBar from '../components/ProgressBar/ProgressBar';
 import * as classes from './index.module.css';
 
 import { graphql } from 'gatsby';
-import { GatsbyImage, getImage, StaticImage } from 'gatsby-plugin-image';
 import ContactForm from '../components/ContactForm/ContactForm';
+import TileGrid from '../components/GalleryTileGrid/GalleryTileGrid';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
+    const porfolio = data.allMarkdownRemark.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            title: node.frontmatter.title,
+            image: node.frontmatter.image,
+            description: node.rawMarkdownBody,
+            link: node.frontmatter.github,
+        };
+    });
+
     return (
         <>
             <Seo title="Home" />
@@ -109,18 +120,10 @@ const IndexPage = ({ data }) => {
                     </div>
                 </PageBlock>
                 <PageBlock id="portfolio" order={2} minFullHeight>
-                    {data.allMarkdownRemark.edges.map(({ node }) => (
-                        <div
-                            key={node.id}
-                            style={{ width: '400px', aspectRatio: 1.78 }}
-                        >
-                            <GatsbyImage
-                                image={getImage(node.frontmatter.image)}
-                                alt={node.frontmatter.title}
-                            />
-                            {node.frontmatter.title}
-                        </div>
-                    ))}
+                    <div className={classes.blockWide}>
+                        <UnderlinedHeading>My Portfolio</UnderlinedHeading>
+                        <TileGrid data={porfolio} />
+                    </div>
                 </PageBlock>
                 <PageBlock
                     id="contact"
@@ -150,11 +153,13 @@ export const frontpagePortfolioQuery = graphql`
             edges {
                 node {
                     id
+                    rawMarkdownBody
                     frontmatter {
                         path
                         title
                         languages
                         technologies
+                        github
                         image {
                             childImageSharp {
                                 gatsbyImageData

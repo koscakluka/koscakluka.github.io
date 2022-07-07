@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.block-wide {
+    flex: 0 1 1000px;
+    width: 1000px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
 .footer-block {
     padding-bottom: 4rem;
     position: relative;
