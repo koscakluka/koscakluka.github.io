@@ -1,0 +1,66 @@
+.page-block-landing {
+    align-items: center;
+}
+
+.block {
+    flex: 0 1 500px;
+    width: 500px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.block-wide {
+    flex: 0 1 1000px;
+    width: 1000px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.footer-block {
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.text-block {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    line-height: var(--line-height-normal);
+    margin-bottom: 2rem;
+}
+
+.profile-front {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1;
+
+    margin: 0 auto;
+}
+
+.profile-front-img {
+    padding: 10px !important;
+    background-color: #b9b9b9 !important;
+
+    object-fit: cover;
+    object-position: 0% 0%;
+    border-radius: 50%;
+}
+
+.libraries {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.language-title {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+@media screen and (max-height: 1000px) {
+    .profile-front {
+        max-width: 50vh;
+    }
+}

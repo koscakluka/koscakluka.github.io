@@ -1,0 +1,142 @@
+.navigation {
+    position: relative;
+
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block;
+
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+
+    width: 24px;
+    height: 2px;
+    background: var(--color-bg-1);
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.header-menu {
+    position: absolute;
+    top: 3rem;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    background-color: var(--color-bg-2);
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+        drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    transition: max-height 0.4s linear;
+}
+
+.header-menu-open {
+    max-height: 15rem;
+}
+
+.header-menu > * {
+    margin: 0.75rem 0;
+}
+
+.header-menu > *:first-child {
+    margin: 0.5rem;
+}
+
+@media (min-width: 400px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header-menu {
+        display: none;
+    }
+}
+
+/* Flex Menu */
+.header-links {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    height: 100%;
+}
+
+.header-links li {
+    padding: 0;
+    margin: 0;
+}
+
+.header-links a {
+    color: var(--color-bg-3);
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    color: var(--color-bg-1);
+}
+
+@media (min-width: 400px) {
+    .navigation {
+        display: block;
+    }
+
+    .header-links {
+        display: flex;
+    }
+}
