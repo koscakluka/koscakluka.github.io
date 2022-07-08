@@ -7,7 +7,7 @@ technologies: ['React']
 frontpage: true
 
 type: 'practice'
-image: '../../images/portfolio/eisenhower-matrix-app.png'
+image: '../../assets/images/portfolio/eisenhower-matrix-app.png'
 
 website: 'https://eisenhower-matrix-app-one.vercel.app'
 github: 'https://github.com/koscakluka-web-practice/eisenhower-matrix-app'

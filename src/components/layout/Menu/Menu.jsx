@@ -18,7 +18,7 @@ const Menu = () => {
     };
 
     const scrollClick = (e) => {
-        toggleMenu();
+        setMenuOpen(false);
         // e.preventDefault();
         // gsap.to(window, {
         //     duration: 0.5,

@@ -1,4 +1,4 @@
-import './src/layouts/index.css'
+import './src/assets/style/index.css';
 
 /**
  * Implement Gatsby's Browser APIs in this file.

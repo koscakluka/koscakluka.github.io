@@ -2,12 +2,12 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '../components/layout/Header/Header';
+import Footer from '../components/layout/Footer/Footer';
 
-import * as classes from './index.module.css';
+import * as classes from './main.module.css';
 
-import './index.css';
+import '../assets/style/index.css';
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
