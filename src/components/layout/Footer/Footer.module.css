@@ -17,3 +17,16 @@
     background-color: var(--color-bg-3);
     color: var(--color-text);
 }
+
+.copyright {
+}
+
+.built-by {
+    display: none;
+}
+
+@media (min-width: 320px) {
+    .built-by {
+        display: inline;
+    }
+}

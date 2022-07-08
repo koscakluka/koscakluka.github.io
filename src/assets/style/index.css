@@ -21,6 +21,7 @@
     --font-md: 18px;
     --font-sm: 16px;
     --font-sx: 14px;
+    --font-sxx: 10px;
     --line-height-loose: 1.75;
     --line-height-normal: 1.5;
     --line-height-dense: 1.1;
@@ -260,4 +261,21 @@ pre code:after,
 pre tt:before,
 pre tt:after {
     content: none;
+}
+
+@media (max-width: 320px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span {
+        word-break: break-all;
+    }
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
 }

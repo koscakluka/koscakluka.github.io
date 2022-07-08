@@ -14,6 +14,14 @@ const MESSAGE_PLACEHOLDER = 'Write your message here...';
 function ContactForm() {
     const [state, handleSubmit] = useForm('xpzbewbo');
 
+    const toggleActiveField = (e, action) => {
+        if (action === 'add') {
+            e.target.parentElement.classList.add(classes.activeField);
+        } else if (action === 'remove') {
+            e.target.parentElement.classList.remove(classes.activeField);
+        }
+    };
+
     if (state.succeeded) {
         return (
             <>
@@ -33,6 +41,12 @@ function ContactForm() {
                         type="text"
                         name="name"
                         placeholder={NAME_PLACEHOLDER}
+                        onFocus={(e) => {
+                            toggleActiveField(e, 'add');
+                        }}
+                        onBlur={(e) => {
+                            toggleActiveField(e, 'remove');
+                        }}
                         required
                     ></input>
                 </fieldset>
@@ -43,16 +57,10 @@ function ContactForm() {
                         name="email"
                         placeholder={EMAIL_PLACEHOLDER}
                         onFocus={(e) => {
-                            e.target.parentElement.classList.add(
-                                classes.activeField
-                            );
-                            e.target.placeholder = '';
+                            toggleActiveField(e, 'add');
                         }}
                         onBlur={(e) => {
-                            e.target.parentElement.classList.remove(
-                                classes.activeField
-                            );
-                            e.target.placeholder = { EMAIL_PLACEHOLDER };
+                            toggleActiveField(e, 'remove');
                         }}
                         required
                     />
@@ -75,16 +83,10 @@ function ContactForm() {
                         name="message"
                         placeholder={MESSAGE_PLACEHOLDER}
                         onFocus={(e) => {
-                            e.target.parentElement.classList.add(
-                                classes.activeField
-                            );
-                            e.target.placeholder = '';
+                            toggleActiveField(e, 'add');
                         }}
                         onBlur={(e) => {
-                            e.target.parentElement.classList.remove(
-                                classes.activeField
-                            );
-                            e.target.placeholder = { MESSAGE_PLACEHOLDER };
+                            toggleActiveField(e, 'remove');
                         }}
                         required
                     />
@@ -98,14 +100,19 @@ function ContactForm() {
                 }
                 <Recaptcha
                     sitekey="6LffqJMgAAAAAF4RsbqCApkUjXeSwpXZW_Kf3DbI"
-                    onloadCallback={() => {
-                        const recaptchaStyle =
-                            document.querySelector('#g-recaptcha > div').style;
-                        recaptchaStyle.width = '100%';
-                        recaptchaStyle.height = '';
-                        recaptchaStyle.padding = '1rem 0';
-                    }}
+                    size="invisible"
                 />
+                <div style={{ fontSize: 'var(--font-sxx)' }}>
+                    This site is protected by reCAPTCHA and the Google&nbsp;
+                    <a href="https://policies.google.com/privacy">
+                        Privacy Policy
+                    </a>
+                    &nbsp; and&nbsp;
+                    <a href="https://policies.google.com/terms">
+                        Terms of Service
+                    </a>
+                    &nbsp; apply.
+                </div>
                 <button
                     className={classes.submitButton}
                     type="submit"
