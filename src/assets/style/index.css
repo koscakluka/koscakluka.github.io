@@ -263,7 +263,7 @@ pre tt:after {
     content: none;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 279px) {
     h1,
     h2,
     h3,

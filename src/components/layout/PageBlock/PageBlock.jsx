@@ -3,33 +3,28 @@ import PropTypes from 'prop-types';
 
 import * as classes from './PageBlock.module.css';
 
-const PageBlock = ({
-    id,
-    children,
-    className,
-    style,
-    order,
-    minFullHeight,
-}) => {
-    const wrapperClass = [
-        (order + 1) % 2 ? classes.pageBlockOdd : classes.pageBlockEven,
-        classes.pageBlockWrapper,
-    ].join(' ');
+const PageBlock = React.forwardRef(
+    ({ id, children, className, style, order, minFullHeight }, ref) => {
+        const wrapperClass = [
+            (order + 1) % 2 ? classes.pageBlockOdd : classes.pageBlockEven,
+            classes.pageBlockWrapper,
+        ].join(' ');
 
-    const blockClass = [
-        className,
-        classes.pageBlock,
-        minFullHeight ? classes.pageBlockFull : '',
-    ].join(' ');
+        const blockClass = [
+            className,
+            classes.pageBlock,
+            minFullHeight ? classes.pageBlockFull : '',
+        ].join(' ');
 
-    return (
-        <div id={id} className={wrapperClass}>
-            <div className={blockClass} style={{ ...style }}>
-                {children}
+        return (
+            <div id={id} className={wrapperClass}>
+                <div ref={ref} className={blockClass} style={{ ...style }}>
+                    {children}
+                </div>
             </div>
-        </div>
-    );
-};
+        );
+    }
+);
 
 PageBlock.propTypes = {
     id: PropTypes.string,

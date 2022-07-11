@@ -3,6 +3,8 @@ import Link from 'gatsby-link';
 
 import * as classes from './Menu.module.css';
 
+import { animateScrolling } from './Menu.animations';
+
 const menuItems = [
     { title: 'Home', href: 'landing' },
     { title: 'About', href: 'about' },
@@ -18,12 +20,11 @@ const Menu = () => {
     };
 
     const scrollClick = (e) => {
+        e.preventDefault();
+
         setMenuOpen(false);
-        // e.preventDefault();
-        // gsap.to(window, {
-        //     duration: 0.5,
-        //     scrollTo: e.target.getAttribute('href'),
-        // });
+        const target = '#' + e.target.getAttribute('href').split('#')[1];
+        animateScrolling(target);
     };
 
     const generateMenu = () =>

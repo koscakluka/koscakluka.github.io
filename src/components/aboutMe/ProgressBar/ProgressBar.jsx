@@ -28,7 +28,10 @@ const ProgressBar = ({
 
     return (
         <div className={classes.progressBarWrapper} style={barwrapperStyle}>
-            <div className={classes.progressBarValue} style={valueBarStyle} />
+            <div
+                className={[classes.progressBarValue, 'progress-bar'].join(' ')}
+                style={valueBarStyle}
+            />
             <ProgressBarScale {...scaleOptions} />
         </div>
     );

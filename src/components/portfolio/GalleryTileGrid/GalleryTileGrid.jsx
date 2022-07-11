@@ -6,7 +6,6 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import * as classes from './GalleryTileGrid.module.css';
 
 const GalleryTileGrid = ({ data }) => {
-    console.log(data);
     return (
         <div className={classes.grid}>
             {data.map((item) => (

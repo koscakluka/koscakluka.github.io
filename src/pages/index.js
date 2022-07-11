@@ -13,6 +13,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import * as classes from './index.module.css';
 
+import { useAnimation } from '../hooks/index.animations';
+
 import * as aboutMe from '../data/aboutme';
 
 const IndexPage = ({ data }) => {
@@ -26,12 +28,16 @@ const IndexPage = ({ data }) => {
         };
     });
 
+    const [landingBlock, aboutMeBlock, portfolioBlock, contactBlock] =
+        useAnimation();
+
     return (
         <>
             <Seo title="Home" />
             <Layout>
                 {/* Landing Block */}
                 <PageBlock
+                    ref={landingBlock}
                     id="landing"
                     className={classes.pageBlockLanding}
                     order={0}
@@ -64,7 +70,12 @@ const IndexPage = ({ data }) => {
                     </div>
                 </PageBlock>
                 {/* About Me Block */}
-                <PageBlock id="about" order={1} minFullHeight>
+                <PageBlock
+                    ref={aboutMeBlock}
+                    id="about"
+                    order={1}
+                    minFullHeight
+                >
                     {/* About Me Text */}
                     <div
                         className={[classes.block, classes.textBlock].join(' ')}
@@ -97,7 +108,12 @@ const IndexPage = ({ data }) => {
                     </div>
                 </PageBlock>
                 {/* Porfolio Block */}
-                <PageBlock id="portfolio" order={2} minFullHeight>
+                <PageBlock
+                    ref={portfolioBlock}
+                    id="portfolio"
+                    order={2}
+                    minFullHeight
+                >
                     <div className={classes.blockWide}>
                         <UnderlinedHeading>My Portfolio</UnderlinedHeading>
                         <TileGrid data={porfolio} />
@@ -105,6 +121,7 @@ const IndexPage = ({ data }) => {
                 </PageBlock>
                 {/* Contact Block */}
                 <PageBlock
+                    ref={contactBlock}
                     id="contact"
                     className={classes.footerBlock}
                     order={3}
