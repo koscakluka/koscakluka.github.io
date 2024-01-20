@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+import {Separator} from '@/components/ui/separator'
+import {ModeToggle} from '@/components/ModeToggle.tsx'
+import '@/styles/globals.css'
+import { Construction } from 'lucide-react';
+---
+
+<Layout title="Under Construction...">
+	<main class="flex justify-center items-center min-h-[100dvh]">
+		<Card className='sm:max-w-screen-sm'>
+			<CardHeader className='items-center'>
+				<CardTitle>Under Construction...</CardTitle>
+				<CardDescription>I am reworking the whole site in Astro!</CardDescription>
+			</CardHeader>
+			<CardContent className='flex flex-col items-center'>
+				<p>
+					<Construction size=64 strokeWidth={1.5}/>
+				</p>
+			<Separator className='my-4'>
+			</CardContent>
+			<CardFooter className="flex-col gap-4">
+				<p class="text-sm">You can play with the theme until I finish construction :)</p>
+				<p><ModeToggle client:load/></p>
+			</CardFooter>
+		</Card>
+	</main>
+</Layout>
