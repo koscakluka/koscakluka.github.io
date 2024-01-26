@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -12,6 +14,9 @@ export default {
       },
     },
     extend: {
+      fontFamily:{
+        "permanent-marker": ["'Permanent Marker'"]
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
