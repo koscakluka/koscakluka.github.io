@@ -14,6 +14,7 @@
     "@astrojs/mdx": "^2.1.0",
     "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/indie-flower": "^5.0.18",
     "@fontsource/permanent-marker": "^5.0.8",
     "@fontsource/playpen-sans": "^5.0.2",
     "@radix-ui/react-dropdown-menu": "^2.0.6",

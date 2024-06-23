@@ -1,6 +1,7 @@
 ---
 import '@/styles/globals.css'
 import '@fontsource/permanent-marker'
+import '@fontsource/indie-flower'
 import '@fontsource/playpen-sans/200.css'
 import '@fontsource/playpen-sans/300.css'
 import '@fontsource/playpen-sans/400.css'
@@ -46,14 +47,14 @@ const {frontmatter: { title, description }} = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="grid grid-cols-[1fr_min(65ch,_100%)_1fr] font-['Playpen_Sans']">
-		<header class="col-start-1 col-end-[-1] shadow">
+	<body class="relative grid grid-cols-[1fr_min(65ch,_100%)_1fr] font-['Playpen_Sans']">
+		<header class="fixed w-full col-start-1 col-end-[-1] shadow dark:shadow-neutral-700 bg-neutral-50 dark:bg-neutral-950">
 			<div class="p-4 flex justify-between items-center mx-auto max-w-screen-2xl w-full">
 				<h1 class="font-permanent-marker text-3xl">{title}</h1>
 				<ModeToggle className="flex-shrink-0" client:load />
 			</div>
 		</header>
-		<main class="col-start-2 col-end-3 pb-4 pt-8 text-lg font-light px-4">
+		<main class="col-start-2 col-end-3 pb-4 pt-20 text-lg font-light px-4">
 		<slot />
 		</main>
 	</body>

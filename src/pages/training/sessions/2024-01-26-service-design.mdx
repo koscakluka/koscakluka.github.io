@@ -33,7 +33,7 @@ random choices.
 
 It will be simple:
 
-1. Understand what Service Design means
+1. Understand what is Service Design
 2. Learn about the fundamental tool for Service Design and see the applications
 3. Explore what else is out there and where this fits in the whole idea of
 Service Design
@@ -46,19 +46,100 @@ There are some rules:
   both you and me
 * Everything depends on your participation, you cannot just sit back and enjoy
   the show. It will not be easy, and it might be uncomfortable, learning in
-  general mostly is uncomfortable, but you have to participate 
+  general mostly is uncomfortable, but I will try to make it as easy for you
+  as I can
 
 Are you ready to push yourself past that discomfort?
+
+# What is Service Design?
+
+Obviously "Service Design" consists of two words, which are worth exploring
+individually.
+
+## Service
+
+What does "Service" actually mean?
+
+If we look at [Merriam Webster Dictionary](https://www.merriam-webster.com/dictionary/service) we will find the following:
+
+> service, noun
+> * help, use, benefit
+> * contribution to the welfare of others
+> * a helpful act
+> * useful labor that does not produce a tangible commodity — usually used in plural
+
+But [Dictionary.com](https://www.dictionary.com/browse/service) hits it perfectly with:
+
+> service, noun
+> * an act of helpful activity; help; aid
+
+## Design
+
+As for "Design", [Merriam Webster](https://www.merriam-webster.com/dictionary/design) says:
+
+> design, verb
+> * to create, fashion, execute, or construct according to plan : devise, contrive
+> * to conceive and plan out in the mind
+> * to devise for a specific function or end
+
+***
+
+When put together we can say that service design is
+
+<blockquote className="border-l-4 border-neutral-500 pl-2 pb-4">
+    conceiving and planning out in the mind an act of helpful activity
+</blockquote>
+
+or in a more natural English
+
+<blockquote className="border-l-4 border-neutral-500 pl-2 pb-4">
+    planning out an activity that will help others
+</blockquote>
+
+# StoryBrand as a Service Design Foundation
+
+StoryBrand is a marketing framework that helps simplifying a message through
+the eyes of storytelling.
+
+What do stories have to do with services? Well, in his book 
+[Building a StoryBrand](https://www.goodreads.com/book/show/34460583-building-a-storybrand)
+Donald Miller says the following:
+> Story is the one thing that can hold a human being’s attention for hours.
+>
+> Nobody can look away from a good story. In fact, neuroscientists claim the
+> average human being spends more than 30 percent of their time daydreaming ...
+> unless they’re reading, listening to, or watching a story unfold. Why?
+> Because when we are engaged in a story, the story does the daydreaming for us.
+>
+> Story is the greatest weapon we have to combat noise, because it organizes
+> information in such a way that people are compelled to listen.
+
+While that is important, stories have another quality, they make us feel and
+empathise. And as we already concluded service is an activity that will **help others**.
+
+StoryBrand framework can guide us part by part to empathize with the people
+who are going to use our service and by doing that help us design a service
+that will be useful to someone. 
+
+*TODO: Insert slides*
+
+# Identifying StoryBrand Elements in Services
+
+# Using StoryBrand to Design Services
 
 [//]: <div class="flex justify-center">
 [//]:     <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Flukakoscak.me%2Ftraining%2Fsessions%2F2024-01-26-service-design&chs=180x180&choe=UTF-8&chld=L|2" alt="qr code" class="w-full max-w-[30ch]" />
 [//]: </div>
 
 export const components = {
-    h1: ({children, ...props}) => <h1 {...props} className="text-2xl pb-4 font-permanent-marker">{children}</h1>,
-    h2: ({children, ...props}) => <h2 {...props} className="text-1xl pb-2 font-permanent-marker">{children}</h2>,
-    p: ({children, ...props}) => <p {...props} className="pb-4 text-justify">{children}</p>,
-    ol: ({children, ...props}) => <ol {...props} className="pb-4 list-decimal pl-8">{children}</ol>,
-    ul: ({children, ...props}) => <ul {...props} className="pb-4 list-disc pl-8">{children}</ul>,
+    h1: ({children, ...props}) => <h1 {...props} className="text-2xl pt-4 font-permanent-marker">{children}</h1>,
+    h2: ({children, ...props}) => <h2 {...props} className="text-1xl pt-2 font-permanent-marker">{children}</h2>,
+    p: ({children, ...props}) => <p {...props} className="pt-4 text-justify">{children}</p>,
+    ol: ({children, ...props}) => <ol {...props} className="pt-2 list-decimal pl-8">{children}</ol>,
+    ul: ({children, ...props}) => <ul {...props} className="pt-2 list-disc pl-8">{children}</ul>,
     li: ({children, ...props}) => <li {...props} className="pb-2">{children}</li>,
+    a: ({children, ...props}) => <a {...props} className="text-red-500">{children}</a>,
+    blockquote: ({children, ...props}) => <blockquote {...props} className="italic my-4 border-l-4 border-neutral-500 pl-2">{children}</blockquote>,
+    hr: (props) => <hr {...props} className="h-px bg-neutral-400 border-0 dark:bg-neutral-500" />,
+    strong: ({children, ...props}) => <strong {...props} className="font-bold">{children}</strong>
 }
