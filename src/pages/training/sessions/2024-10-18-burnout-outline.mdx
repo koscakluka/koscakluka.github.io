@@ -1,0 +1,131 @@
+---
+layout: '../../../layouts/TrainingSession.astro'
+title: "Burnout - Session Outline"
+---
+
+# Introduction (5 min)
+---
+
+Preface: I am not a psychologist, just an engineer who went through an
+experience and decided to do a lot of research.
+
+# Cycle 1 - Burnout Definition and Dimensions
+---
+
+## Engage (20 min)
+---
+
+### Reflection on Burnout Experience and/or Perception
+Goal: Extract experiences and perception so they can be used to compare the the
+model.
+
+Description:
+- Use Metafox or Dixit (check which images could resonate more with general
+  idea of burnout
+- Invite participants to pick 1-2 cards that describe their perception (or
+  unfortunately experience) with burnout
+  - Focus only on the experience, not on resolving it (that will be cycle 2)
+
+## Share (10 min)
+---
+
+### Presentation
+Notes:
+- Preface that this is medical definitions and might differ from experience,
+  emphasis on this being the model that aims to describe the state and might not
+  map 1-to-1 to the experience
+
+Description:
+- Show and read the burnout definition
+
+## Practice (10 min ??)
+---
+
+## Perform (15 min)
+---
+
+### Brainstorm How to Detect Burnout
+
+Description:
+- Participants come up with tools/techinques/methods to identify rising burnout
+  in themselves and (potentially) others
+
+# Cycle 2 - 6 Factors of Burnout
+---
+
+## Engage (10 min)
+---
+
+### Maslach's story from Swedish research
+Goal: Spark interest and show that taking a break might not be enough to "cure"
+burnout
+
+Steps:
+1. Tell Maslach's Story
+2. Allow asking questions and sharing participant's perspective
+
+## Share - Know-How (45 min)
+---
+
+### Brainstorming Factors of Burnout
+Notes:
+- Interesting grouping: workload, community, control-values, reward-fairness
+
+Steps:
+1. Have the group brainstorm on what the factors might be
+2. As they are going on the right path reveal the factor
+3. If there is a group nudge them in the direction to reveal all of them
+4. Explain the concept behind the factor(s)
+5. Let participants come up and share examples of a factor/group
+6. Discuss the examples
+
+### 6 Factors - Burnout Dimensions connection
+
+Description:
+- Show what research says about how 6 Factors affect different dimensions of
+  burnout
+
+## Practice (45 min)
+---
+
+### Help your team/yourself (Roleplay/Simulation)
+
+Steps:
+1. Split into 2-4 groups
+2. Assign group with role - Workplace Team Lead or Member
+3. Share the scenario they are in; mention if something is not written they are
+   supposed to ask
+4. Let them work and answer any questions 
+5. Presentation and debrief
+
+## Perform (1 h)
+---
+
+### Building the toolbox
+
+Description:
+- Participants choose one of the two areas: "How to help yourself?" or "How to
+  help your team?" and come up with tools/techniques/methods to apply when
+  approaching burnout or to prevent it.
+- Focus on creating a flipchart/slide that can be displayed 
+
+Steps:
+1. Describe the task
+2. Allow participants to form groups or work individually (they can switch
+later)
+3. Presenation and Debrief
+
+
+export const components = {
+    h1: ({children, ...props}) => <h1 {...props} className="text-2xl pt-8 font-permanent-marker">{children}</h1>,
+    h2: ({children, ...props}) => <h2 {...props} className="text-1xl pt-6 font-permanent-marker">{children}</h2>,
+    h3: ({children, ...props}) => <h3 {...props} className="text-lg pt-4 font-medium underline">{children}</h3>,
+    p: ({children, ...props}) => <p {...props} className="pt-4 text-justify">{children}</p>,
+    ol: ({children, ...props}) => <ol {...props} className="pt-2 list-decimal pl-8">{children}</ol>,
+    ul: ({children, ...props}) => <ul {...props} className="pt-2 list-disc pl-8">{children}</ul>,
+    li: ({children, ...props}) => <li {...props} className="pb-2">{children}</li>,
+    a: ({children, ...props}) => <a {...props} className="text-red-500">{children}</a>,
+    blockquote: ({children, ...props}) => <blockquote {...props} className="italic my-4 border-l-4 border-neutral-500 pl-2">{children}</blockquote>,
+    hr: (props) => <hr {...props} className="h-px bg-neutral-400 border-0 dark:bg-neutral-500" />,
+    strong: ({children, ...props}) => <strong {...props} className="font-bold">{children}</strong>
+}
