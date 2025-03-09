@@ -1,0 +1,51 @@
+---
+layout: '../../layouts/TrainingSession.astro'
+title: "Call List"
+---
+
+Essentially, I am trying something new.
+
+If you are reading this, I want to add you to my "Call List", which is very
+simply put a list of people that I will call when I go on a walk or instead of
+scrolling Instagram/TikTok/YouTube/(insert scrolling app here) or if I just
+want to talk to them.
+
+## Some of the reasons I want to do this:
+
+* Spend more time being social
+* Connecting more with the people I want to connect with
+* I struggle with answering to messages, so this ensures we stay in touch
+* Research shows that the physiological response tends to be the better over
+  call compared to texting (sometimes even better than video).
+
+## What do you need to do?
+
+You can say no, and all is great, no hard feelings :)
+
+If you do say yes:
+				
+* You are free not to answer whenever I call you
+* If you miss a call, you don't have to call back - you can just text or call
+  back if you want Let me know not to call you during certain times (e.g. after
+* 10 PM, during work hours, or even just texting me "Please don't call
+  tomorrow")
+				
+## This is weird
+
+If this is weird, which I think it might be to some people, I am doing this
+because there used to be this implicit social contract that we are allowed to
+just call up a person. We lost this and now randomly calling someone up is
+"weird, but not weird". I want to explicitly make it just "not weird".
+
+export const components = {
+    h1: ({children, ...props}) => <h1 {...props} className="text-2xl pt-8 font-permanent-marker">{children}</h1>,
+    h2: ({children, ...props}) => <h2 {...props} className="text-1xl pt-6 font-permanent-marker">{children}</h2>,
+    p: ({children, ...props}) => <p {...props} className="pt-4 text-justify">{children}</p>,
+    ol: ({children, ...props}) => <ol {...props} className="pt-2 list-decimal pl-8">{children}</ol>,
+    ul: ({children, ...props}) => <ul {...props} className="pt-2 list-disc pl-8">{children}</ul>,
+    li: ({children, ...props}) => <li {...props} className="pb-2">{children}</li>,
+    a: ({children, ...props}) => <a {...props} className="text-red-500">{children}</a>,
+    blockquote: ({children, ...props}) => <blockquote {...props} className="italic my-4 border-l-4 border-neutral-500 pl-2">{children}</blockquote>,
+    hr: (props) => <hr {...props} className="h-px bg-neutral-400 border-0 dark:bg-neutral-500" />,
+    strong: ({children, ...props}) => <strong {...props} className="font-bold">{children}</strong>
+}
