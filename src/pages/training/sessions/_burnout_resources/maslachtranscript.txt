@@ -1,0 +1,420 @@
+well thank you very much for the invitation to come here and share the kinds of
+things I know about burnout in Las Vegas this is so cool I never get to lecture
+in a auditorium quite like this so what I would like to do is tell you a little
+bit about what we've learned about job burnout and I've been studying it in
+many many different occupations and when I was fighting to come here I said you
+have any connection with IT and I said yeah right the occupational groups that
+I've mostly worked with her in health care Human Services social activists and
+I think that's probably also relevant for for some of you here but people who
+have a passion for solving problems for social justice and get to the point of
+saying no matter how hard we work we never get enough done and it's always this
+elusive goal it's like is one of them said to me it's like being anorexic
+you're never thin enough if you're an activist you are never working hard and
+accomplishing enough so this has been part of my history as well but now we're
+seeing in many other kinds of professions and actually about a little 15 20
+years ago I was called by Sweden and some of my colleagues and I were asked
+they were saying we're having this crisis in some of our workplace things
+please come over and help us because we think it might be this thing called
+burnout we're not really sure so we went over and it turned out that there's a
+social insurance system for everybody who works in Sweden that if you are going
+out on sick leave or some sort of disability you leave your job they pay for
+your salary for up to a year and a half they put you in treatment for whatever
+it is you need and after the year year-and-a-half you go back to your original
+job you get what you had left and come in and what they were seeing was the
+sharp increase in the number of people going out on sick leave from health care
+and from IT and they were particularly concerned because when they looked at
+the diagnosis it was severe clinical depression work-related only so that was
+you know and certainly they're saying if that sounds like burnout that it's
+oppression but only work-related and as we looked at colleagues and I looked at
+the data and we were sort of saying well you know actually we think maybe
+burnout happened upstream before this you now have a problem with severe
+clinical depression and that's what you've got a treat but it was probably a
+warning sign that people weren't paying attention to didn't know about earlier
+on but it got a lot of attention in the press we were being interviewed our
+photos are in the paper and every time I would go out on a break and walk
+around you know like in the streets of Stockholm you know take a break there
+would be people and you can see this whispering and pointing and after a while
+somebody would come up and sort of tap me on the shoulder and say are you the
+burnout woman from the United States yeah we saw you in the paper I said yes
+yes and they said well I just wanted to tell you I'm one of those people who's
+going out on leave that they're they're talking about I said okay and anything
+else you want to share and they said I don't want to go back to that job ok so
+    that was a really interesting kind of thing even though they were going to
+    get this salary they were going to be away from work they were gonna get
+    treatment it wasn't worth it was a price too high for them they did not
+    want to go back to that job and that job is what we have learned from
+    research is way more important for understanding what happens with burnout
+    or engagement with work then individual characteristics like personality
+    and where you came from and all this kind of thing so it's a theme that it
+    will get back to a little bit later but that was my first go-around in
+    terms of tech so what's happening now that we're seeing you know I've been
+    studying this for several decades and so the workplace today is not really
+    what it used to be several decades ago so we're not seeing people as doing
+    as much full-time there is less and less concern investment in employees in
+    various ways there's more destructive competition I cannot tell you how
+    many people talk about the socially toxic workplace where you don't trust
+    anybody because they're going to try and throw you under the and get rid of
+    you as competition you don't dare ever say I'm tired I don't know the
+    answer to this problem I wish I had some advice I'm feeling depressed
+    you're showing your weak side you can't do that there are tactics that
+    talent get rewarded for things but not everybody else people feel like
+    they're getting shut out of opportunities and loss of a common good so
+    there are things that are changing kind of how this is all working that I
+    think may make sense as we look at a little bit later burnout by the way if
+    anybody ever says I invented the word burnout for this stress response it's
+    not true nobody invented it it's been around for a long long time and it's
+    sort of as emerged as kind of language of the people I'm the daughter of an
+    engineer who worked in the NASA space program at one point and I know we
+    would hear burnout all the time rocket boosters burnout my favorite is ball
+    bearings burnout and the reason is because it's it in an abrasive apartment
+    without a key resource which is oil to make it function well and there is
+    an analogy there to what we've learned about burnout in the workplace the
+    other thing is that in the early days of Silicon Valley we were hearing and
+    seeing a lot of the burnout shop ads people were trying to hire people
+    saying we are the burnout shop and we don't want just type a people we want
+    type A plus plus plus people and the burnout shop was really a start-up and
+    it was a it was like a sprint you know it was a short-term kind of thing
+    maybe a couple of years it was basically we own you you don't have no life
+    when we call you come but and you're going to work and work until you have
+    nothing left to give but then you'll have stock options or some other thing
+    and you'll get a lot of money and you'll be fine so that was that was the
+    trade-off that was the burnout shop interestingly what I think we're seeing
+    more and more is that as a business model in a lot of occupations we're
+    seeing it in healthcare we're seeing it in social services we're seeing it
+    in education and it's now a marathon and the sprint model is still being
+    used in terms of self-sacrifice you have to give up time you have to give
+    up other things in your life in in order to do this and we don't always see
+    metrics you know taking account of what some of the costs are of this the
+    health problems physical exhaustion we've had some publicity recently about
+    sleep Deborah deprivation and what that does to you not good disruptions of
+    personal life loss of self-worth burnout depression anxiety and suicide
+    sometimes we talk about suicidal ideation and so this is kind of the price
+    that people are paying to work in these kinds of environments and we're
+    seeing it as a more you know regular model and the assumption often is that
+    people who burnout aren't so good and in fact I've talked to managers and
+    CEOs who say burnouts wonderful and I say why do you think say that I mean
+    they're you know all the costs in something it said because they burnout
+    means they weren't so good they're not working well now and they're
+    quitting saving me the job of having to fire them so very good it cleans
+    the house and I don't have to spend much time on it in fact that's not the
+    case the problem of unhealthy jobs and this is data that has all been
+    pulled together and analyzed in a new book out by Jeff Pfeffer from the
+    Stanford Business School and it's called dying for a paycheck we know that
+    there are lots of very toxic and highly stressful job conditions we know
+    that they pose a real danger to people's health and well-being so there's a
+    lot of statistics on that but we're always hearing that that's you know we
+    have to pay the price this is the way to be financially successful and so
+    forth his analyses of all of the data that are looking at this is that they
+    don't enhance productivity it doesn't necessarily help the bottom line so
+    where's it's a lose/lose kind of proposition if you want to see the the
+    book itself dying for a paycheck how modern management harms employee
+    health and company performance and just came out and this is interesting
+    because it echoes things that was happening in Japan not too many years ago
+    where they're talking about Karoshi death from overwork heart attack
+    strokes now they have a term Kairos jujitsu which means death overwork but
+    suicide that is happening so we've got some real issues here in terms of
+    this there's one image that I'm talking about today that I hope you
+    remember it's this one and this is that we have found that the fit or the
+    match or the balance or imbalance between a person and the job a person and
+    the environment in which they're working is in critical for burnout in six
+    areas they are not listed in order of importance they're listed in order of
+    which one people think of first workload is the one that everybody thinks
+    at first it must be they're working too hard they're stressed out on the
+    imbalance between too many demands too few resources to get it done but
+    there are five other areas that turn out to be just as important in some
+    ways and so they can offer an alternative way to approach the problem one
+    of these is control in other words how much autonomy you have in your work
+    how much choice discretion to figure out how to do it the best way or
+    innovate in some way reward people think of things like salary benefits
+    perks etc we're finding in the research that social reward is also
+    sometimes more important that other people notice that they appreciate what
+    you do and let you know that you've done something that's really meaningful
+    community refers to the workplace these are all the relationships you have
+    at work with other colleagues your boss clients whoever and are those
+    relationships functioning well are they supportive do you trust you have
+    ways of working out disagreements and figuring out how to move forward work
+    together well on teams etc fairness this turns out to be a real important
+    one is whatever the policy is whatever the practices are here in this place
+    are they fairly administered in terms of who gets the opportunity are there
+    glass ceilings or discrimination or other things that block people from
+    moving forward when they should have that that chance and finally sometimes
+    this turns out to be one of the most important is values this is meaning
+    this is why you know what is it why am I doing this why am I here what do I
+    care about what what is important to me in terms of what I think is
+    important for our society the contributions I make and so forth and so with
+    burnout it's not just about being exhausted and working too hard and tired
+    it's often that the spirit the passion the meaning is just getting beaten
+    out of you as opposed to being allowed to sort of thrive and grow so these
+    six areas offerors I'll show you later six different entry points into what
+    could we do a little differently that might actually create a better
+    healthier improved workplace to support the kind of things we want to
+    achieve so if you look at it in mismatched terms demand overload a lack of
+    control insufficient reward when I've talked with people about this often
+    you know and ask them about what's a good day they can't tell me anything
+    good and the best day is nothing bad happened you know it's kind of like
+    mmm this is kind of a little depressing standard a breakdown of community
+    people are talking a lot these days about socially toxic workplaces I love
+    the work I think I'm good at it but I cannot stand being around these
+    people and all the politicking in the and the stuff you know it's what you
+    who you know rather than you know how well you do etc absence of fairness
+    in value conflicts people being asked to do unethical kinds of things being
+    asked to do things that they think are really wrong getting caught in binds
+    so the more the mismatches the more likely we see a risk of burnout down
+    the road a year later or too late or something like that it doesn't mean
+    that all of them have to be in perfect shape not at all people can tolerate
+    a lot of mismatch if there are some that are really really important and
+    strong and working well so this is you know giving us a better picture now
+    of how people function and why and what we can do okay burnout as a stress
+    phenomenon it's a prolonged response to chronic situational stressors on
+    the job and I want to emphasize chronic it's not a response to eight an
+    acute crisis or an emergency or something it's the everyday stuff that
+    begins to wear people down to the point where they're saying I can't do
+    this anymore I don't want to be here anymore from the research we've
+    identified three sort of overlapping but not completely the same in
+    dimensions so we measure those one is the stress response which is known as
+    exhaustion and this is like I can't do it anymore you know I've got you
+    know I can't think straight I want to go home and I've still got you know
+    more more going on cynicism is for me the heart of really burnout it's not
+    just your working too hard but you're getting to the point where you're
+    saying take this job and shove it Johnny paycheck anybody remember that
+    country-western song and what happens here is that as you begin to get
+    negative and hostile and cynical about the other people the place you know
+    what's going on people start changing how they work rather than trying to
+    do their very best they're trying to do the bare minimum what is the least
+        I need to do and still have the job and get out of here and get a
+        paycheck the socially toxic workplace this is where it comes in a lot
+        and then there's a second one a third one which is negative
+        self-evaluation you're feeling not great about yourself maybe I'm not
+        really good at this maybe I've made a mistake I shouldn't be here
+        people talk about the erosion of my soul that's an interesting phrase
+        it comes up a lot that there's no future perhaps for me I'm stuck I
+        can't you know what am I going to do in the future so there are these
+        they come together in different patterns so the research measure that I
+        developed many years ago the massive lack Burnout inventory was used to
+        study what are causes and effects of this and what can we do about it
+        people are often using it as a diagnostic tool now it measures the
+        three dimensions but it doesn't ask agree disagree or yes/no it says
+        how often do you feel like this and when people are at a higher risk of
+        burnout they are reporting scores of five or six several times a week I
+        feel like every day I am feeling it so it's like saying every day I'm
+        feeling burned out I'm feeling like I can't deal with it anymore I
+        don't want to deal with the people anymore we don't add all of these
+        scores up into a single score because different patterns would yield
+        the same total it doesn't make sense but we are using more
+        sophisticated data now analysts analysis tools right now to give us
+        profiles and patterns other people are trying to simplify and say it's
+        only exhaustion or there's a cut-off score you're burned out you're not
+        actually that's not a good way of talking about it what we've been
+        finding so far is at least five one is burnout and you have three
+        essentially negative scores high on exhaustion high on cynicism high on
+        that professional in efficacy I'm not really good at that this I'm not
+        feeling good about it second one is disengaged and here only one high
+        negative score and that's on cynicism here's one people talk about a
+        lot one high- score only on exhaustion and some people use that as a
+        proxy for burnout if it's it's exhaustion burnout is exhaustion if
+        they're high in exhaustion end of story that's all ineffective you have
+        a high negative score on not feeling good about yourself and the fifth
+        profile is you're not scoring high on any of those three you're
+        actually looking pretty good and we're talking about these people is
+        more engaged with work so here's a set of data that we just collected
+        recently we another colleague of mine and this was in health care so
+        these are all physicians they're being compared here against the
+        baseline for physicians so more positive bars saying those six areas
+        they're looking really pretty good whereas if you look at the burnout
+        over here they are looking much worse than the norm than the average on
+        that on all those areas there's a seventh one in their own
+        administration which the physicians asks if they could answer those
+        questions but the other six areas if you can look at this here this is
+        the one that is the overextended profile there is one as high
+        exhaustion and there is one issue and it's workload that's a different
+        pattern entirely than people who are really experiencing full-blown
+        burnout so all of this kind of things suggest I mean is cynicism one
+        they disengaged looks more like this and here people are doing okay but
+        not great they're not getting much on feedback social reward community
+        so all of this suggests that if we can do more customized interventions
+        depending on where people are in this we might do better than trying to
+        say there's a one practice that will deal with burnout you know dealing
+        with that one is a hard problem trying to do stuff earlier upstream is
+        a better one so I used to be talking about burnout as being like a red
+        flag that warns you that something is going wrong in the workplace let
+        me change that a little bit and say it's more like the canary in the
+        coal mine and if you understand that the canary in the cage goes down
+        in the coal mine and if the canary is having trouble breathing and
+        functioning its assigned to you that the workplace the mine is
+        dangerous too many toxic fumes you better not send people down there so
+        it's a warning sign and this is really what burnout is is is about in a
+        sense it's a warning sign of a toxic work environment and what you
+        should be doing is saying what is going on to cause such problems among
+        people who work here what you don't want to do is try and make the bird
+        better and tough and resilient and it can take you know if you can't
+        stand the toxic fumes and the heat in the kitchen you shouldn't work
+        here kind of thing so it's you know again it's it's a sign that it
+        could get worse you don't want to go there because it's harder to treat
+        people at that point so it's again a warning sign when I was in Sweden
+        and we talked about this upstream thing with all the people there that
+        was happening in the country one of the psychiatrist's that we were
+        working with said ah reminds me of a fable and the fable is I may have
+        heard this people are walking out in the forest and they're walking by
+        a moving stream a river going over to a waterfall and all of a sudden
+        they spot there's a little baby in the water that's being pushed along
+        and is heading towards the waterfall in the water and so they're saying
+        oh my god we've got to rescue this child run in you know to take the
+        child out they get off and they look and hit oh there's another one and
+        it's coming down the water race into the water to get rescue it and
+        then more and then more and they're calling people come help help help
+        we're going to rescue these children and suddenly a couple of the
+        people leave and start running they say where are you going we've got
+        to rescue these kids and they yell back where trying to find the
+        pastors who are throwing them in so the thing is further upstream maybe
+        where your problem is and not simply when it gets really difficult at
+        this point so when I say fit between people in the job what do we mean
+        here well we do with this a lot we fit people to the job by training
+        them by educating them giving them experience here's what you have to
+        do here's what you have to learn we also do a good job of helping them
+            cope with stressors so if that heat is getting too much what do you
+            do how do you get stronger healthier get enough sleep eat the right
+                things meditate yoga there's tons of ideas out there as to what
+                to do plus a lot of the coping mechanisms fall into the
+                category of don't go to work well think about that they're
+                saying the best way you can do this is not show up be absent
+                take a vacation go home there's something to say and about the
+                workplace really what's happening there these individual
+                solutions helpful as they are and I'm a believer in health and
+                you know well-being and and you know being resilient and so
+                forth but they don't change the job they don't make it less
+                toxic so actually what we need to be thinking about is more how
+                do you fit the job to people and so what are the work
+                    conditions that actually are causing like I mentioned
+                    before an unhealthy workplace having negative effects on
+                    people how could those be changed in some way well again
+                    nothing new ergonomics human factors we do this all the
+                    time but it's on the relationship between workers and their
+                    physical environment so we sort of figure out how human
+                    beings are built and made and how they sit and do different
+                    things and how can you change the design one of my graduate
+                    students for example who's worked on the cockpit design and
+                    Airlines so you want to do it so you minimize the
+                    possibility that someone will make a mistake the wrong
+                    button pull the wrong lever so you adjust for how people
+                    think and what they're more likely to notice and so forth
+                    how do we apply that design model to the social and
+                    psychological environment in other words how do we think
+                    about workplaces that are actually helping people to become
+                    more motivated to be more committed to be innovative and so
+                    forth these are all psychological this is about how human
+                    beings tick you know how we work how we function and could
+                    we use that same kind of design principle not just for
+                    physical but how do you make a workplace where people
+                    thrive rather than getting beaten down where they provide a
+                    better return on the investment you make on them and so
+                    forth so even if you have bought the most beautiful plant
+                    let's say and if you put it in a lousy pot with not much
+                    soil no Sun in little water no matter how good that plant
+                    was to start it's not going to thrive so you need to be
+                    thinking about the setting and these other kinds of things
+                    so what creates when if you start focusing on the social
+                    psychological things it turns out different number five six
+                    now seven core needs lots and lots of data on these that
+                    say that when people feel that these needs get satisfied at
+                    home at work you know wherever they will feel more
+                    motivated they will feel more positive about whatever it is
+                    they're doing so autonomy that you know the sense of can
+                    some control and choice or what I do sense of belongingness
+                    that I am part of a larger thing an important thing whether
+                    it's a school or a team or a unit or whatever feeling
+                    competent what is it that tells me that I am good at this
+                    and I'm really feeling you know assure of what I'm doing
+                    positive emotions we want to have things that make us feel
+                    good periodically that we celebrate the laughs about that
+                    we have a you know some some great things here fairness as
+                    I mentioned before and meaning the values again and so what
+                    the research is showing that if we you know these might be
+                    the kinds of things we take into account as we're doing a
+                    design a better design of workplaces that support people
+                    okay so if we go back to those six paths that I mentioned
+                    before the healthy workplace what might that look like in
+                    positive turn what are the positive goals that we would
+                    move towards so here are some that you know we've been
+                    putting together with our work with healthcare systems so a
+                    sustainable workload it's not about is that working hard or
+                    not working long hours or not but is it something that it
+                    can be sustained that there is time to recover get the rest
+                    get that whatever before you go back in and do and do more
+                    what what supports that choice and control some recognition
+                    and reward a supportive work community this doesn't mean
+                    you all agree but you have a way of working out conflicts
+                    and disagreements and figure out how to me going forward
+                    and that people know who to trust who they can go to for
+                    advice mentorship etc fairness in terms of how we run
+                    things respect social justice clear values and meaningful
+                    work so just to give you a sense of it can be done this is
+                    one of the first organizations that I worked with and it
+                    was about a thousand people it was not healthcare it was a
+                    variety of administrative services for a large corporation
+                    and I'm showing you the mean scores when we started with
+                    people on the six areas and what happened was they focused
+                    on the fact that fairness was looking much more negative
+                    than for the you know that occupation as a whole so they
+                    decided to make changes think what is unfair I mean the CEO
+                    was shocked what do you mean were unfair what are we doing
+                    lots of things that turned out including a Distinguished
+                    Service Award that people hated hated because even though
+                    it paid extra money it was so unfair in her terms of who
+                    got chosen to get the award you know it was the leader of
+                    the team but not the whole team it was you had to be
+                    nominated by your supervisor and if he or she couldn't be
+                    bothered with doing this stuff you would never be eligible
+                    etcetera so they went and changed this over all these
+                    things over the year a year later here's what they looked
+                    like they had turned the fairness issue around there was a
+                    ripple effect and that's very common it's finding a place
+                    to begin to make it a little bit better to build some
+                    optimism to build some hope hey we changed that stupid
+                    award now we got a good one what could we do next time and
+                    feeding back this information to the people who generated
+                    it I cannot say enough about communication with everybody
+                    and getting sure you're getting good in put from all the
+                    people that you're asking to involve and be a part of it
+                    and they'd outdo this process every year since that time so
+                    six strategic paths it turns out there are lots of
+                    possibilities starting in any one of these six areas to
+                    improve a better fit between people in the job they can be
+                    small inexpensive and customizable in some cases they are
+                    things that you don't have to ask a higher-up for
+                    permission to do you don't have to get more money you don't
+                    have to redesign things for the 20th first century and
+                    there are ways in which people can take more control of the
+                    work working together in a in a in a more socially positive
+                    trusting kind of way that actually leads to fewer you know
+                    reduction in burnout better engagement less absenteeism
+                    less of the other negative outcomes and basically when you
+                    start doing this kind of thing what we're seeing is a
+                    healthier workplace former will thrive the workers and the
+                    latter will sit seed final note I should say that the
+                    burnout shop is we're seeing it today is not a viable it's
+                    not a desirable future I don't think for our workplaces for
+                    people there we have a new interdisciplinary Center at
+                    Berkeley where I am now working with people I've never
+                    worked with before like architects and people from
+                    economics and so forth and trying to figure out a better
+                    way of feeling out everybody has a piece of the work place
+                    puzzle and how could we do something better than what we
+                    have as we design those so Jeanne and John asked me what
+                    kind of help are you looking for basically I want more good
+                    examples of success stories or best practices within each
+                    of those six areas I love to hear about these things
+                    because people ask me all the time what would you recommend
+                    I'd like to have the evidence of what would be best to
+                    recommend I will go on the rooftops shout it out how can we
+                    establish better partnerships between researchers like
+                    myself and in practice what's actually happening how do we
+                    come together bring the different knowledge mine more
+                    generic your a more specific and come up with better
+                    solutions trying them out and getting evidence do they work
+                    or not do they need to be tweaked before they do it and be
+                    able to use that evidence to spread to other places so that
+                    in the future we're not going to see burnout as much of an
+                    issue that is sort of poisoning the workplace but we're
+                    going to see much more of that optimization that engagement
+                    in which everyone is thriving and really doing their best
+                    and enjoying being there so thank you so much [Applause]
