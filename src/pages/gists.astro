@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+
+const gists = await getCollection('gists');
+---
+<Layout title="Gists">
+  <Nav />
+  <main class="max-w-[77ch] mx-auto py-4 px-4">
+    <h1 class="text-3xl font-bold tracking-tight mb-2">Gists</h1>
+    <p class="font-medium text-gray-500 mb-4 italic">
+      Gists are snippets of thoughts that I expend upon in a couple of
+      paragraphs and I thought might be worth sharing with others.
+    </p>
+    <ul>
+      {gists.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).map(gist => (
+      <li>
+        <a
+          href={`/gists/${gist.id}`}
+          class="text-red-500 font-medium hover:underline"
+        >
+          {gist.data.title}
+        </a>
+        <span class="text-gray-500">{gist.data.date.toDateString()}</span>
+      </li>
+      ))}
+    </ul>
+  </main>
+</Layout>
