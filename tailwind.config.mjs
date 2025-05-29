@@ -14,8 +14,11 @@ export default {
       },
     },
     extend: {
-      fontFamily:{
-        "permanent-marker": ["'Permanent Marker'"]
+      colors: {
+        background: "var(--color-background)",
+      },
+      fontFamily: {
+        "permanent-marker": ["'Permanent Marker'"],
       },
       keyframes: {
         "accordion-down": {
@@ -34,4 +37,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
