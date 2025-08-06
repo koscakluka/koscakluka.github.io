@@ -1,12 +1,12 @@
 ---
-import { getCollection, render } from 'astro:content';
-import gistsMarkdownComponents from './_components.jsx'
-import Layout from '../../layouts/Layout.astro';
-import Nav from '../../components/Nav.astro';
+import { getCollection, render } from "astro:content";
+import gistsMarkdownComponents from "./_components.jsx";
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
 
 export async function getStaticPaths() {
-  const gists = await getCollection('gists');
-  return gists.map(gist => ({
+  const gists = await getCollection("gists");
+  return gists.map((gist) => ({
     params: { id: gist.id },
     props: { gist },
   }));
@@ -17,18 +17,24 @@ interface Props {
     data: {
       title: string;
       date: Date;
-    }
-  }
+    };
+  };
 }
 
 const { gist } = Astro.props;
 const { Content, components } = await render(gist);
 ---
+
 <Layout title={gist.data.title}>
   <Nav />
-  <main class="max-w-[70ch] mx-auto py-4 px-4">
+  <main class="max-w-[70ch] mx-auto pb-4 px-4 pt-8">
     <h1 class="text-3xl font-bold tracking-tight">{gist.data.title}</h1>
-    <p class="text-lg font-medium text-gray-500">{gist.data.date.toDateString()}</p>
+    <p class="text-lg font-medium text-primary">
+      {gist.data.date.toDateString()}
+    </p>
     <Content components={{ ...gistsMarkdownComponents, ...components }} />
+    <hr class="my-2" /><span class="text-muted-foreground"
+      >I guess that is the gist of it...</span
+    >
   </main>
 </Layout>
