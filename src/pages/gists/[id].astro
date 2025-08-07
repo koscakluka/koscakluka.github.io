@@ -34,7 +34,8 @@ const { Content, components } = await render(gist);
       {gist.data.date.toDateString()}
     </p>
     <Content components={{ ...gistsMarkdownComponents, ...components }} />
-    <hr class="my-2" /><span class="text-muted-foreground"
+    <hr class="my-2" /><span
+      class="text-muted-foreground dark:text-muted-foreground/70"
       >I guess that is the gist of it...</span
     >
   </main>
