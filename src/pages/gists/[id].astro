@@ -17,6 +17,7 @@ interface Props {
     data: {
       title: string;
       date: Date;
+      description: string | undefined;
     };
   };
 }
@@ -25,7 +26,7 @@ const { gist } = Astro.props;
 const { Content, components } = await render(gist);
 ---
 
-<Layout title={gist.data.title}>
+<Layout title={gist.data.title} description={gist.data.description}>
   <Nav />
   <main class="max-w-[77ch] mx-auto pb-4 px-4 pt-8">
     <h1 class="text-3xl font-bold tracking-tight">{gist.data.title}</h1>

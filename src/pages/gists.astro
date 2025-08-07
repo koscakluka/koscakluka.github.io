@@ -6,7 +6,10 @@ import Nav from "../components/Nav.astro";
 const gists = await getCollection("gists");
 ---
 
-<Layout title="Gists">
+<Layout
+  title="Gists"
+  description="Gists are snippets of thoughts expended upon in a couple of paragraphs which I thought might be worth sharing with others."
+>
   <Nav />
   <main class="max-w-[77ch] mx-auto pb-4 px-4 pt-8">
     <h1 class="text-2xl font-bold tracking-tight mb-2">Gists</h1>
