@@ -3,9 +3,14 @@ import "@/styles/globals.css";
 
 interface Props {
 	title: string;
+	description?: string | undefined;
 }
 
 const { title } = Astro.props;
+let { description } = Astro.props;
+if (!description) {
+	description = "Luka's personal website";
+}
 ---
 
 <!doctype html>
@@ -38,10 +43,13 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="og:title" content={title} />
+		<meta name="og:description" content={description} />
+		<meta name="og:image" content="https://lukakoscak.me/favicon.svg" />
 		<title>{title}</title>
 	</head>
 	<body class="relative bg-background min-h-[100dvh] h-fit md:pb-20 pb-24">
