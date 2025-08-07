@@ -8,15 +8,21 @@ const navData = [{ name: "Gists", path: "/gists" }];
 <nav aria-label="Primary">
   <div class="w-full shadow-xl shadow-primary/10">
     <div
-      class="flex justify-between items-center w-full max-w-4xl mx-auto py-2 px-4"
+      class="flex justify-between items-center w-full max-w-4xl mx-auto py-1.5 px-4 dark:pt-1 dark:pb-2"
     >
       <a href="/" class="logomark" aria-label="Go home">
         <Icon name="logo-light" height="40" width="40" />
       </a>
       <ul class="flex items-center gap-4">
-        {navData.map((item) => <a href={item.path}>{item.name}</a>)}
+        {
+          navData.map((item) => (
+            <a class="mt-1 dark:mt-0.5" href={item.path}>
+              {item.name}
+            </a>
+          ))
+        }
         <li>
-          <ModeToggle client:load />
+          <ModeToggle className="mb-0 dark:mb-0.5" client:load />
         </li>
       </ul>
     </div>
