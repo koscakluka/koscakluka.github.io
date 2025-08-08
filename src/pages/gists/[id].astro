@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 import gistsMarkdownComponents from "./_components.jsx";
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
@@ -13,17 +13,11 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  gist: {
-    data: {
-      title: string;
-      date: Date;
-      description: string | undefined;
-    };
-  };
+  gist: CollectionEntry<"gists">;
 }
 
 const { gist } = Astro.props;
-const { Content, components } = await render(gist);
+const { Content } = await render(gist);
 ---
 
 <Layout title={gist.data.title} description={gist.data.description}>
@@ -33,7 +27,7 @@ const { Content, components } = await render(gist);
     <p class="text-lg font-medium text-primary">
       {gist.data.date.toDateString()}
     </p>
-    <Content components={{ ...gistsMarkdownComponents, ...components }} />
+    <Content components={gistsMarkdownComponents} } />
     <hr class="my-2" /><span
       class="text-muted-foreground dark:text-muted-foreground/70"
       >I guess that is the gist of it...</span
