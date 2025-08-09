@@ -1,9 +1,7 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
-
-const gists = await getCollection("gists");
+import GistList from "../components/GistList.astro";
 ---
 
 <BaseLayout
@@ -11,30 +9,12 @@ const gists = await getCollection("gists");
   description="Gists are snippets of thoughts expended upon in a couple of paragraphs which I thought might be worth sharing with others."
 >
   <Nav />
-    <h1 class="text-2xl font-bold tracking-tight mb-2">Gists</h1>
   <main class="max-w-4xl mx-auto pb-4 pt-8 px-4">
+    <h1 class="text-2xl font-bold tracking-tight mb-2">Luka's Gists</h1>
     <p class="font-light text-gray-500 mb-4 italic">
       Gists are snippets of thoughts expended upon in a couple of paragraphs
       which I thought might be worth sharing with others.
     </p>
-    <ul class="space-y-1.5">
-      {
-        gists
-          .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-          .map((gist) => (
-            <li>
-              <a
-                href={`/gists/${gist.id}`}
-                class="text-primary font-medium hover:underline"
-              >
-                {gist.data.title}
-              </a>
-              <span class="text-muted-foreground text-sm ml-1">
-                {gist.data.date.toDateString()}
-              </span>
-            </li>
-          ))
-      }
-    </ul>
+    <GistList />
   </main>
 </BaseLayout>

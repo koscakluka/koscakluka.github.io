@@ -1,0 +1,37 @@
+---
+import { getCollection } from "astro:content";
+
+export interface Props {
+  limit?: number;
+}
+const { limit } = Astro.props;
+
+const gists = await getCollection("gists").then((l) =>
+  l.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+);
+
+const relevantGists = limit ? gists.slice(0, limit) : gists;
+---
+
+<ul class="space-y-1.5">
+  {
+    relevantGists.map((gist) => (
+      <li>
+        <a
+          href={`/gists/${gist.id}`}
+          class="text-primary font-medium hover:underline"
+        >
+          {gist.data.title.trim()}
+        </a>
+        <span class="text-muted-foreground text-sm ml-1">
+          {gist.data.date.toDateString()}
+        </span>
+      </li>
+    ))
+  }
+  {
+    limit && gists.length > limit ? (
+      <li class="text-sm"><a class="text-muted-foreground/60" href="/gists">Show more...</a></li>
+    ) : null
+  }
+</ul>
