@@ -1,8 +1,8 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import gistsMarkdownComponents from "./_components.jsx";
-import Layout from "../../layouts/Layout.astro";
-import Nav from "../../components/Nav.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Nav from "@/components/Nav.astro";
 
 export async function getStaticPaths() {
   const gists = await getCollection("gists");
@@ -20,7 +20,7 @@ const { gist } = Astro.props;
 const { Content } = await render(gist);
 ---
 
-<Layout title={gist.data.title} description={gist.data.description}>
+<BaseLayout title={gist.data.title} description={gist.data.description}>
   <Nav />
   <main class="max-w-[77ch] mx-auto pb-4 px-4 pt-8">
     <h1 class="text-3xl font-bold tracking-tight">{gist.data.title}</h1>
@@ -28,7 +28,7 @@ const { Content } = await render(gist);
       {gist.data.date.toDateString()}
     </p>
     <Content components={gistsMarkdownComponents} } />
-    <hr class="my-2" /><span
+    <hr class="my-2 border-muted-foreground/60" /><span
       class="text-muted-foreground dark:text-muted-foreground/70"
       >I guess that is the gist of it...</span
     >

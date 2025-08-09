@@ -36,11 +36,7 @@ export default {
       {props.children}
     </li>
   ),
-  a: (props: ComponentProps<"a">) => (
-    <a {...props} className="text-red-500">
-      {props.children}
-    </a>
-  ),
+  a: (props: ComponentProps<"a">) => <a {...props}>{props.children}</a>,
   blockquote: (props: ComponentProps<"blockquote">) => (
     <blockquote
       {...props}

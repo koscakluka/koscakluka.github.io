@@ -116,8 +116,14 @@
     1px 1px 16px -2px hsl(0 63.6364% 21.5686% / 0.12),
     1px 8px 10px -3px hsl(0 63.6364% 21.5686% / 0.12);
   --shadow-2xl: 1px 1px 16px -2px hsl(0 63.6364% 21.5686% / 0.3);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
 }
 
 body {
   @apply dark:text-neutral-50 dark:bg-neutral-950 text-neutral-950 bg-neutral-50;
+}
+
+a {
+  @apply dark:translate-y-[1px] inline-block underline-offset-2 hover:underline text-primary;
 }

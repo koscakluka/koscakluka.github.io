@@ -1,18 +1,18 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../layouts/Layout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import Nav from "../components/Nav.astro";
 
 const gists = await getCollection("gists");
 ---
 
-<Layout
+<BaseLayout
   title="Gists"
   description="Gists are snippets of thoughts expended upon in a couple of paragraphs which I thought might be worth sharing with others."
 >
   <Nav />
-  <main class="max-w-[77ch] mx-auto pb-4 px-4 pt-8">
     <h1 class="text-2xl font-bold tracking-tight mb-2">Gists</h1>
+  <main class="max-w-4xl mx-auto pb-4 pt-8 px-4">
     <p class="font-light text-gray-500 mb-4 italic">
       Gists are snippets of thoughts expended upon in a couple of paragraphs
       which I thought might be worth sharing with others.
@@ -37,4 +37,4 @@ const gists = await getCollection("gists");
       }
     </ul>
   </main>
-</Layout>
+</BaseLayout>
