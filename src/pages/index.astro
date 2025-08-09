@@ -1,37 +1,198 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
-import {Separator} from '@/components/ui/separator'
-import {ModeToggle} from '@/components/ModeToggle.tsx'
-import '@/styles/globals.css'
-import { Construction } from 'lucide-react';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Footer from "../components/Footer.astro";
+import GistList from "../components/GistList.astro";
+import { linkedIn, twitter, github } from "@/data/socials";
 ---
 
-<Layout title="Under Construction...">
-	<main class="flex justify-center items-center min-h-[100dvh]">
-		<Card className='sm:max-w-screen-sm max-sm:mx-4 max-sm:text-center'>
-			<CardHeader className='items-center'>
-				<CardTitle>Under Construction...</CardTitle>
-				<CardDescription>I am reworking the whole site in Astro!</CardDescription>
-			</CardHeader>
-			<CardContent className='flex flex-col items-center'>
-				<p>
-					<Construction size=64 strokeWidth={1.5}/>
-				</p>
-			<Separator className='my-4'>
-			</CardContent>
-			<CardFooter className="flex-col gap-4">
-				<p class="text-sm">You can play with the theme until I finish construction :)</p>
-				<p><ModeToggle client:load/></p>
-			</CardFooter>
-		</Card>
+<BaseLayout>
+	<main class="mx-auto max-w-4xl px-4 py-10 md:py-16">
+		<div class="fixed -top-20 left-0 h-20 w-[100dvw] bg-background shadow-xl shadow-primary/10"></div>
+		<section
+			class="rounded-2xl border border-neutral-200 bg-white/60 p-6 shadow-sm backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-900/60 md:p-8"
+		>
+			<div class="flex flex-col md:flex-row items-start gap-6">
+				<div
+					class="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border border-neutral-200 bg-white p-1 shadow-sm dark:border-neutral-800 dark:bg-neutral-800 md:h-40 md:w-40"
+				>
+					<img
+						src="/hero.jpeg"
+						alt="Profile picture"
+						class="h-full w-full rounded-full object-contain"
+						width="112"
+						height="112"
+					/>
+				</div>
+
+				<div class="min-w-0">
+					<h1
+						class="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl"
+					>
+						Hi, I'm Luka
+					</h1>
+					<p
+						class="mt-2 text-[15px] leading-6 text-neutral-600 dark:text-neutral-300"
+					>
+						Senior Full stack developer with roots in control
+						engineering and robotics. At the moment, I am building
+						voice‑first AI and natural‑language interfaces.
+					</p>
+
+					<p
+						class="mt-4 text-[15px] leading-6 text-neutral-600
+            dark:text-neutral-300"
+					>
+						Currently working on
+						<a
+							href="https://findmymedsapp.com"
+							class="font-medium text-[hsl(var(--primary))] underline"
+							target="_blank">Find My Meds</a
+						>
+						and
+						<a
+							href="https://github.com/koscakluka/ema"
+							class="font-medium text-[hsl(var(--primary))] underline"
+							target="_blank"
+							rel="noreferrer">EMA</a
+						>.
+					</p>
+
+					<div
+						class="mt-4 flex flex-wrap items-center gap-4 text-sm
+            text-neutral-700 dark:text-neutral-200"
+					>
+						<a
+							href={github.href}
+							target="_blank"
+							rel="noreferrer"
+							class="inline-flex items-center gap-2 rounded-md border
+              border-neutral-200 bg-white px-3 py-1.5 hover:bg-neutral-50
+              dark:border-neutral-800 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-inherit hover:no-underline"
+						>
+							<github.svg class="mb-0.5" /> GitHub
+						</a>
+						<a
+							href={linkedIn.href}
+							target="_blank"
+							rel="noreferrer"
+							class="inline-flex items-center gap-2 rounded-md border
+              border-neutral-200 bg-white px-3 py-1.5 hover:bg-neutral-50
+              dark:border-neutral-800 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-inherit hover:no-underline"
+						>
+							<linkedIn.svg/> LinkedIn
+						</a>
+						<a
+							href={twitter.href}
+							target="_blank"
+							rel="noreferrer"
+							class="inline-flex items-center gap-2 rounded-md border
+              border-neutral-200 bg-white px-3 py-1.5 hover:bg-neutral-50
+              dark:border-neutral-800 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-inherit hover:no-underline"
+						>
+							<twitter.svg className="mb-0.5"/> Twitter
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="notes" class="mt-12 space-y-4">
+			<h2 class="text-xl font-semibold tracking-tight">
+				<a class="text-inherit hover:no-underline" href="/gists">Gists</a>
+			</h2>
+			<div
+				class="rounded-xl border border-neutral-200 bg-white/60 p-5 flex flex-col gap-y-2 dark:bg-neutral-900/60 dark:border-neutral-800"
+			>
+				<GistList limit={3} />
+			</div>
+		</section>
+
+		<section id="work" class="mt-16">
+			<!-- <h2 class="text-xl font-semibold tracking-tight">Focused On</h2> -->
+			<div class="mt-5 grid gap-5 md:grid-cols-2">
+				<a
+					href="https://findmymedsapp.com"
+					class="group rounded-xl border border-neutral-200 bg-white/60 p-5
+          shadow-sm transition hover:shadow-md dark:border-neutral-800
+          dark:bg-neutral-900/60 text-inherit hover:no-underline"
+				>
+					<div
+						class="aspect-[16/9] w-full rounded-lg"
+					>
+						<img
+							src="https://dev.nni.renee.com/images/FMM_preview.png"
+							alt="Find My Meds"
+							class="w-full rounded-lg border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-800 aspect-[16/9]"
+						/>
+					</div>
+					<h3 class="mt-4 text-lg font-medium text-primary">Find My Meds</h3>
+					<p
+						class="mt-1 text-sm text-neutral-600 dark:text-neutral-300"
+					>
+						Voice agent that navigates pharmacy IVRs and speaks with
+						a pharmacist to check stock, place orders at a
+						prescription pharmacy, or source from nearby locations.
+					</p>
+					<div class="mt-3 flex flex-wrap gap-2 text-xs">
+						<span
+							class="rounded-full border border-neutral-200 bg-white px-2
+              py-0.5 dark:border-neutral-800 dark:bg-neutral-800"
+							>Voice AI</span
+						>
+						<span
+							class="rounded-full border border-neutral-200 bg-white px-2
+              py-0.5 dark:border-neutral-800 dark:bg-neutral-800"
+							>Telephony</span
+						>
+						<span
+							class="rounded-full border border-neutral-200 bg-white px-2
+              py-0.5 dark:border-neutral-800 dark:bg-neutral-800"
+							>Agentic flows</span
+						>
+					</div>
+				</a>
+
+				<a
+					href="https://github.com/koscakluka/ema"
+					target="_blank"
+					rel="noreferrer"
+					class="group rounded-xl border border-neutral-200 bg-white/60 p-5
+          shadow-sm transition hover:shadow-md dark:border-neutral-800
+          dark:bg-neutral-900/60 text-inherit hover:no-underline"
+				>
+					<div
+						class="aspect-[16/9] overflow-hidden w-full rounded-lg bg-transparent"
+					>
+						<img
+							src="/cover-image.png"
+							alt="Find My Meds"
+							class="w-full rounded-lg border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-800 aspect-[16/10] object-cover object-bottom"
+						/>
+					</div>
+					<h3 class="mt-4 text-lg font-medium text-primary">
+						EMA — Electro‑Magnetic Assistant
+					</h3>
+					<p
+						class="mt-1 text-sm text-neutral-600 dark:text-neutral-300 w-full"
+					>
+						Open‑source exploration of Natural‑Language UI — agents,
+						tools, evaluation, and experiments that push the
+						interface boundary.
+					</p>
+					<div class="mt-3 flex flex-wrap gap-2 text-xs">
+						<span
+							class="rounded-full border border-neutral-200 bg-white px-2
+              py-0.5 dark:border-neutral-800 dark:bg-neutral-800"
+							>Open source</span
+						>
+						<span
+							class="rounded-full border border-neutral-200 bg-white px-2
+              py-0.5 dark:border-neutral-800 dark:bg-neutral-800"
+							>Natural‑Language UI</span
+						>
+					</div>
+				</a>
+			</div>
+		</section>
 	</main>
-</Layout>
+</BaseLayout>
