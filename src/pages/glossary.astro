@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Nav from "../components/Nav.astro";
+import glossaryEntries from "@/data/glossary.json";
+
+const description =
+	"General definitions are useful for communication and understanding, but to actually put them to use they need to be made actionable. This is my collection of such definitions.";
+
+let lastLetter = "";
+---
+
+<BaseLayout title="Glossary" description={description}>
+	<Nav />
+	<main class="max-w-4xl mx-auto pb-4 pt-8 px-4">
+		<h1 class="text-2xl font-bold tracking-tight mb-2">Actionable Glossary</h1>
+		<p class="font-light text-gray-500 mb-4 italic">
+			{description}
+		</p>
+		<main>
+			{
+				glossaryEntries.data
+					.sort((a, b) => a.term.localeCompare(b.term))
+					.map((entry) => {
+						let groupLetter: string = entry.term.substring(0, 1).toUpperCase();
+						if (lastLetter !== groupLetter) {
+							lastLetter = groupLetter;
+						} else {
+							groupLetter = "";
+						}
+
+						return (
+							<>
+								<!-- {groupLetter ? ( -->
+								<!-- 	<h2 class="ml-1 mt-8 text-lg font-bold">{groupLetter}</h2> -->
+								<!-- ) : ( -->
+								<!-- 	"" -->
+								<!-- )} -->
+			<div class="border border-transparent p-1 hover:border-primary/30">
+									<h3
+										id={entry.term.replace(/\([^)]*\)/g, "").trim()}
+										class="text-primary w-fit max-sm:inline"
+									>
+										{entry.term}
+				</h3><span class="sm:hidden"> - </span>
+									<p class="text-sm max-sm:inline">
+										{entry.definition}
+										{entry.source && (
+											<span class="text-muted-foreground/75">
+												[<a href={entry.source.url}>{entry.source.name}</a>]
+											</span>
+										)}
+									</p>
+								</div>
+							</>
+						);
+					})
+			}
+		</main>
+	</main>
+	<script>
+		function flashHeading(id: string) {
+			let el = document.getElementById(id);
+			if (!el || !el.parentElement) return;
+			el = el.parentElement;
+			el.classList.add("border-primary/30");
+			el.classList.remove("border-transparent");
+			setTimeout(() => {
+				if (!el) return;
+				el.classList.remove("border-primary/30");
+			el.classList.add("border-transparent");
+			}, 1500);
+		}
+
+		function checkHash() {
+			if (location.hash.startsWith("#")) {
+				flashHeading(location.hash.substring(1));
+			}
+		}
+
+		window.addEventListener("DOMContentLoaded", checkHash);
+		window.addEventListener("hashchange", checkHash);
+	</script>
+</BaseLayout>
