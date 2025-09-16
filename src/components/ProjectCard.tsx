@@ -40,8 +40,7 @@ export default function ProjectCard({
       {href ? (
         <a
           href={href}
-          className="mt-1 inline-flex items-center gap-1 text-sm " +
-            "text-[hsl(var(--accent-foreground))] hover:underline"
+          className="mt-1 inline-flex items-center gap-1 text-sm text-[hsl(var(--accent-foreground))] hover:underline"
         >
           Visit <ExternalLink size={16} />
         </a>
