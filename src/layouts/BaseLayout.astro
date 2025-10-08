@@ -27,7 +27,7 @@ if (title !== "Luka Košćak") {
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="/ogimage.png" />
+		<meta property="og:image" content="https://lukakoscak.me/ogimage.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script is:inline>
@@ -43,14 +43,11 @@ if (title !== "Luka Košćak") {
 					: "light";
 			};
 			const isDark = getThemePreference() === "dark";
-			document.documentElement.classList[isDark ? "add" : "remove"](
-				"dark",
-			);
+			document.documentElement.classList[isDark ? "add" : "remove"]("dark");
 
 			if (typeof localStorage !== "undefined") {
 				const observer = new MutationObserver(() => {
-					const isDark =
-						document.documentElement.classList.contains("dark");
+					const isDark = document.documentElement.classList.contains("dark");
 					localStorage.setItem("theme", isDark ? "dark" : "light");
 				});
 				observer.observe(document.documentElement, {
