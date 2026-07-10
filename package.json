@@ -8,10 +8,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/mdx": "^2.1.0",
-    "@astrojs/react": "^3.0.9",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/mdx": "^6.0.3",
+    "@astrojs/react": "^5.0.7",
     "@fontsource/indie-flower": "^5.0.18",
     "@fontsource/permanent-marker": "^5.0.8",
     "@fontsource/playpen-sans": "^5.0.2",
@@ -20,21 +19,30 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "astro": "^5.8.0",
-    "astro-icon": "^1.1.5",
+    "astro": "^6.4.8",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "lucide-react": "^0.312.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.2.0",
-    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.19",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.3.3"
   },
   "pnpm": {
     "overrides": {
-      "@astrojs/mdx": "^4.0.0"
+      "@babel/runtime": "^7.29.7",
+      "brace-expansion": "^2.0.3",
+      "braces": "^3.0.3",
+      "cross-spawn": "^7.0.6",
+      "esbuild": "^0.28.1",
+      "glob": "^10.5.0",
+      "mdast-util-to-hast": "^13.2.1",
+      "minimatch": "^9.0.7",
+      "picomatch": "^2.3.2"
     }
   },
   "devDependencies": {

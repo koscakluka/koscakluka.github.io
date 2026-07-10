@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
+import logoLight from "@/icons/logo-light.svg?raw";
 
 const navData = [
   { name: "Gists", path: "/gists" },
@@ -12,7 +12,10 @@ const navData = [
     class="flex justify-between items-center w-full max-w-4xl mx-auto py-1.5 dark:pt-1 dark:pb-2 pl-2 pr-4"
   >
     <a href="/" class="logomark" aria-label="Go home">
-      <Icon name="logo-light" height="40" width="40" />
+      <span
+        class="block h-10 w-10 [&_svg]:h-full [&_svg]:w-full"
+        set:html={logoLight}
+      />
     </a>
     <ul class="flex items-center gap-4 text-sm">
       {
