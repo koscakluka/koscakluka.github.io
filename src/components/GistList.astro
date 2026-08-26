@@ -6,8 +6,10 @@ export interface Props {
 }
 const { limit } = Astro.props;
 
-const gists = await getCollection("gists").then((l) =>
-  l.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+const gists = await getCollection("gists").then((gists) =>
+  gists
+    .filter((gist) => !gist.data.unpublished)
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
 );
 
 const relevantGists = limit ? gists.slice(0, limit) : gists;

@@ -6,11 +6,13 @@ export interface Props {
 	title?: string;
 	description?: string;
 	canonical?: string;
+	noindex?: boolean;
 }
 let {
 	title = "Luka Košćak",
 	description = "I build voice‑first AI",
 	canonical = Astro.site?.toString(),
+	noindex = false,
 } = Astro.props;
 if (title !== "Luka Košćak") {
 	title += " | Luka Košćak";
@@ -21,6 +23,7 @@ if (title !== "Luka Košćak") {
 	<head>
 		<title>{title}</title>
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex" />}
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.svg" />
 		<link rel="canonical" href={canonical} />

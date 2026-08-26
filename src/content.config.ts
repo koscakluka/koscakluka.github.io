@@ -8,6 +8,7 @@ const gists = defineCollection({
     date: z.date(),
     edited: z.date().optional(),
     description: z.string().optional(),
+    unpublished: z.boolean().default(false),
   }),
 });
 
